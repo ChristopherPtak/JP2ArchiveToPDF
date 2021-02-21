@@ -3,7 +3,7 @@
 
 This is a simple script to convert archives of JP2 files into a single PDF
 file. This is useful for converting downloads of books from `archive.org` into
-PDF format, without the reduced quality of 
+PDF format, without the reduced quality of the default PDF download option. 
 
 ## Usage
 
