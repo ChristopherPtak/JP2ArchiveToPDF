@@ -12,17 +12,17 @@ This script is written in Bash, and requires the commands `unzip`,
 be called as follows.
 
 <pre>
-$ ls<br>
-Archive.zip<br>
-$ bash archive_to_pdf.sh Example.zip<br>
-<b>Unzipping file Example.zip</b><br>
-<b>Converting file Example_0.jp2</b><br>
-<b>Converting file Example_1.jp2</b><br>
-<b>Converting file Example_2.jp2</b><br>
-<b>Converting file Example_3.jp2</b><br>
-<b>Converting all images to file Example.pdf</b><br>
-<b>Finished converting Example.zip to Example.pdf</b><br>
-$ ls<br>
-Example.pdf Example.zip<br>
+$ ls
+Archive.zip
+$ bash archive_to_pdf.sh Example.zip
+<b>Unzipping file Example.zip</b>
+<b>Converting file Example_0.jp2</b>
+<b>Converting file Example_1.jp2</b>
+<b>Converting file Example_2.jp2</b>
+<b>Converting file Example_3.jp2</b>
+<b>Converting all images to file Example.pdf</b>
+<b>Finished converting Example.zip to Example.pdf</b>
+$ ls
+Example.pdf Example.zip
 </pre>
 
