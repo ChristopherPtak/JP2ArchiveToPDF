@@ -54,9 +54,9 @@ archive_to_pdf ()
         esac
     done
 
-    bold_echo "Converting all images to PDF file ${OUTPUT_FILENAME}"
+    bold_echo "Converting all images to file ${OUTPUT_FILENAME}"
     convert "${WORKING_DIRECTORY}"/*.png "${OUTPUT_FILENAME}" \
-        1>/dev/null || "Unable to convert to PDF"
+        1>/dev/null || "Unable to convert images to PDF"
 
     # Delete containing files to clear up space for next round
     rm "${WORKING_DIRECTORY}"/*
