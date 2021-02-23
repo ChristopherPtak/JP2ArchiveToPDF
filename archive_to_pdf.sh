@@ -74,13 +74,23 @@ cleanup ()
 ## Main actions
 ##
 
-setup
+if [[ "$1" == "-h" || "$1" == "--help" ]]
+then
 
-while (( "$#" ))
-do
-    archive_to_pdf "$1"
-    shift
-done
+    echo "Usage: $0 [FILES]"
+    echo "       $0 --help"
 
-cleanup
+else
+
+    setup
+
+    while (( "$#" ))
+    do
+        archive_to_pdf "$1"
+        shift
+    done
+
+    cleanup
+
+fi
 
