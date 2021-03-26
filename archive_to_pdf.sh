@@ -56,7 +56,7 @@ archive_to_pdf ()
 
     bold_echo "Converting all images to file ${OUTPUT_FILENAME}"
     convert "${WORKING_DIRECTORY}"/*.png "${OUTPUT_FILENAME}" \
-        1>/dev/null || "Unable to convert images to PDF"
+        1>/dev/null || fail "Unable to convert images to PDF"
 
     # Delete containing files to clear up space for next round
     rm "${WORKING_DIRECTORY}"/*
