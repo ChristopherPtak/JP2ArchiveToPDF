@@ -20,6 +20,10 @@ fail ()
 
 setup ()
 {
+    [[ -x "$(which unzip)" ]] || fail "Could not find command 'unzip'"
+    [[ -x "$(which opj_decompress)"]] || fail "Could not find command 'opj_decompress'"
+    [[ -x "$(which convert)" ]] || fail "Could not find command 'convert'"
+
     WORKING_DIRECTORY=$(mktemp -d)
 }
 
